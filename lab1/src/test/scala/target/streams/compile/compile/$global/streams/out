@@ -1,0 +1,145 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 1e2c444a, interfacing (CompilerInterface) with Scala compiler version 2.10.4[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/JObjC.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/classes:/Users/alexcampbell/.sbt/boot/scala-2.10.4/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/target/scala-2.10/classes[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:1: object scalatest is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.scalatest._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:2: not found: object Lab1[0m
+[0m[[31merror[0m] [0mimport Lab1._[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:11: not found: type FlatSpec[0m
+[0m[[31merror[0m] [0mclass Lab1Spec extends FlatSpec {[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:15: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "abs" should "evaluate to the absolute value of the argument" in {[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:23: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "xor" should "evaluate to the exclusive or of the arguments" in {[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:32: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "repeat" should "evaluate to repeated concatenation of a string" in {[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:41: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "repeat" should "evaluate to an empty string when repeated zero times" in {[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:48: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "repeat" should "throw an exception when a negative number of repetitions is expected" in {[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:56: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "sqrtStep" should "evaluate to one iteration of Newton's method" in {[0m
+[0m[[31merror[0m] [0m             ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:62: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "sqrtN" should "perform several iterations of sqrtStep" in {[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:69: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "sqrtN" should "evaluate to x0 if n is zero" in {[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:74: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "sqrtErr" should "perform iterations until the error is within epsilon" in {[0m
+[0m[[31merror[0m] [0m            ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:83: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "sqrtN" should "throw an exception when n is negative" in {[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:89: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "sqrtErr" should "throw an exception when using a non-positive epsilon" in {[0m
+[0m[[31merror[0m] [0m            ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:100: not found: value Node[0m
+[0m[[31merror[0m] [0m  val t1 = Node(Empty, 2, Empty)[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:101: not found: value Node[0m
+[0m[[31merror[0m] [0m  val t2 = Node(t1, 4, Empty)[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:102: not found: value Node[0m
+[0m[[31merror[0m] [0m  val t3 = Node(Empty, 4, t2)[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:103: not found: value Node[0m
+[0m[[31merror[0m] [0m  val t4 = Node(t1, 4, Node(Empty, 4, Node(Empty, 5, Empty)))[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:104: not found: value Node[0m
+[0m[[31merror[0m] [0m  val t5 = Node(Empty, 2, t1)[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:105: not found: value Node[0m
+[0m[[31merror[0m] [0m  val t6 = Node(Empty, 4, Empty)[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:106: not found: value Node[0m
+[0m[[31merror[0m] [0m  val t7 = Node(Empty, 2, Node(Empty, 4, Empty))[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:107: not found: value Node[0m
+[0m[[31merror[0m] [0m  val t8 = Node(Node(Empty, 1, Empty), 2, Node(Empty, 3, Empty))[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:108: not found: value Node[0m
+[0m[[31merror[0m] [0m  val t9 = Node(Empty, 2, Node(Empty, 3, Empty))[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:109: not found: value Node[0m
+[0m[[31merror[0m] [0m  val t10 = Node(Node(Empty, 1, Empty), 2, Empty)[0m
+[0m[[31merror[0m] [0m            ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:110: not found: value Node[0m
+[0m[[31merror[0m] [0m  val t11 = Node(Node(Empty, 1, Empty), 3, Empty)[0m
+[0m[[31merror[0m] [0m            ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:114: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "repOk" should "ensure that a SearchTree is properly ordered" in {[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:125: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "insert" should "insert numbers as leaves in SearchTrees at the proper position" in {[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:134: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "deleteMin" should "remove the smallest value from a tree, and provide the resulting tree" in {[0m
+[0m[[31merror[0m] [0m              ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:143: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "delete" should "remove a given value from a tree, if present" in {[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:160: not found: type SearchTree[0m
+[0m[[31merror[0m] [0m  def treeFromList(l: List[Int]): SearchTree = ((Empty: SearchTree) /: l)(insert)[0m
+[0m[[31merror[0m] [0m                                  ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:160: not found: type SearchTree[0m
+[0m[[31merror[0m] [0m  def treeFromList(l: List[Int]): SearchTree = ((Empty: SearchTree) /: l)(insert)[0m
+[0m[[31merror[0m] [0m                                                        ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:160: not found: value Empty[0m
+[0m[[31merror[0m] [0m  def treeFromList(l: List[Int]): SearchTree = ((Empty: SearchTree) /: l)(insert)[0m
+[0m[[31merror[0m] [0m                                                 ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:162: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "insert" should "produce trees that satisfy repOk" in {[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:169: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "insert-delete" should "produce tress that satisfy repOk" in {[0m
+[0m[[31merror[0m] [0m                  ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:183: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "eval+" should "perform addition" in {[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:187: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "eval-" should "perform subtraction" in {[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:191: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "eval*" should "perform multiplication" in {[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:195: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "eval/" should "perform division" in {[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/test/scala/Lab1Spec.scala:199: value should is not a member of String[0m
+[0m[[31merror[0m] [0m  "eval/0" should "division by 0 should yield Infinity" in {[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m39 errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m

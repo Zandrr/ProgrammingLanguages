@@ -4,9 +4,9 @@ object Lab1 extends jsy.util.JsyApplication {
   
   /*
    * CSCI 3155: Lab 1
-   * <Your Name>
+   * Alex Campbell
    * 
-   * Partner: <Your Partner's Name>
+   * Partner: Jonathon Song
    * Collaborators: <Any Collaborators>
    */
 
@@ -75,14 +75,27 @@ object Lab1 extends jsy.util.JsyApplication {
 
   /* Exercises */
 
-  def abs(n: Double): Double = throw new UnsupportedOperationException
+  def abs(n: Double): Double = {
+    if (n >= 0 ) n else (n * -1.0)
+  }
 
-  def xor(a: Boolean, b: Boolean): Boolean = throw new UnsupportedOperationException
+  def xor(a: Boolean, b: Boolean): Boolean = {
+    if (a == b) false else true
+  }
 
-  def repeat(s: String, n: Int): String = throw new UnsupportedOperationException
+  def repeat(s: String, n: Int): String =  {
+  require(n >= 0)
   
-  def sqrtStep(c: Double, xn: Double): Double = throw new UnsupportedOperationException
+    n match {
+      case 0 => ""
+      case _ => s + repeat(s, n-1)
+    }
+  }
+  
+  def sqrtStep(c: Double, xn: Double): Double = {
+    return 42
 
+  }
   def sqrtN(c: Double, x0: Double, n: Int): Double = throw new UnsupportedOperationException
   
   def sqrtErr(c: Double, x0: Double, epsilon: Double): Double =
