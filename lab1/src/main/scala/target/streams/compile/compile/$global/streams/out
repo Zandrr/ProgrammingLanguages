@@ -1,0 +1,58 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 11c7d2e3, interfacing (CompilerInterface) with Scala compiler version 2.10.4[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/JObjC.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/classes:/Users/alexcampbell/.sbt/boot/scala-2.10.4/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/target/scala-2.10/classes[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala:1: not found: value jsy[0m
+[0m[[31merror[0m] [0mobject Lab1 extends jsy.util.JsyApplication {[0m
+[0m[[31merror[0m] [0m                    ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala:2: not found: value jsy[0m
+[0m[[31merror[0m] [0m  import jsy.lab1.ast._[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala:3: not found: value jsy[0m
+[0m[[31merror[0m] [0m  import jsy.lab1.Parser[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala:140: not found: type Expr[0m
+[0m[[31merror[0m] [0m  def eval(e: Expr): Double = e match {[0m
+[0m[[31merror[0m] [0m              ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala:141: not found: value N[0m
+[0m[[31merror[0m] [0m    case N(n) => throw new UnsupportedOperationException[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala:147: not found: value Parser[0m
+[0m[[31merror[0m] [0m def eval(s: String): Double = eval(Parser.parse(s))[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala:154: not found: value debug[0m
+[0m[[31merror[0m] [0m    if (debug) { println("Parsing ...") }[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala:156: not found: value Parser[0m
+[0m[[31merror[0m] [0m    val expr = Parser.parseFile(file)[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala:158: not found: value debug[0m
+[0m[[31merror[0m] [0m    if (debug) {[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/Users/alexcampbell/projects/programmingLanguages/lab1/src/main/scala/Lab1.scala:163: not found: value debug[0m
+[0m[[31merror[0m] [0m    if (debug) { println("Evaluating ...") }[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m10 errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m

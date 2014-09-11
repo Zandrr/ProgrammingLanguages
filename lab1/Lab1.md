@@ -33,7 +33,7 @@
 3 		x match {
 4 			case 0 => 0
 5 			case x => {
-6 			val y = x + 1
+6 				val y = x + 1
 7 			({
 8 				val x = y + 1
 9 					y

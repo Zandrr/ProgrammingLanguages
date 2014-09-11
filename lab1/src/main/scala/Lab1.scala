@@ -93,13 +93,26 @@ object Lab1 extends jsy.util.JsyApplication {
   }
   
   def sqrtStep(c: Double, xn: Double): Double = {
-    return 42
+    xn - ((xn*xn - c)/(2*xn))
 
   }
-  def sqrtN(c: Double, x0: Double, n: Int): Double = throw new UnsupportedOperationException
+  def sqrtN(c: Double, x0: Double, n: Int): Double = {
+    require(n>=0)
+
+    n match {
+      case 0 => x0
+      case _ => sqrtN(c, sqrtStep(c, x0), n-1)
+    }
+
+  }
   
-  def sqrtErr(c: Double, x0: Double, epsilon: Double): Double =
-    throw new UnsupportedOperationException
+  def sqrtErr(c: Double, x0: Double, epsilon: Double): Double = {
+      require( epsilon > 0)
+
+      if (abs(x0*x0 - c) <= epsilon) x0 else sqrtErr(c, sqrtStep(c, x0), epsilon)
+
+  }
+    
 
   def sqrt(c: Double): Double = {
     require(c >= 0)
@@ -115,30 +128,63 @@ object Lab1 extends jsy.util.JsyApplication {
   def repOk(t: SearchTree): Boolean = {
     def check(t: SearchTree, min: Int, max: Int): Boolean = t match {
       case Empty => true
-      case Node(l, d, r) => throw new UnsupportedOperationException
+      case Node(l, d, r) => 
+        if( d >= min && d <= max) check(l,min,d)&&check(r,d,max) else false //check(l,min,d) - check that left < parent
+                                                                            //check(r,d,max) - check that right > parent     
     }
     check(t, Int.MinValue, Int.MaxValue)
   }
   
-  def insert(t: SearchTree, n: Int): SearchTree = throw new UnsupportedOperationException
-  
-  def deleteMin(t: SearchTree): (SearchTree, Int) = {
-    require(t != Empty)
-    (t: @unchecked) match {
-      case Node(Empty, d, r) => (r, d)
-      case Node(l, d, r) =>
-        val (l1, m) = deleteMin(l)
-        throw new UnsupportedOperationException
+  def insert(t: SearchTree, n: Int): SearchTree = {
+    t match{
+      case Empty => Node(Empty, n, Empty) // insert node with no left or right nodes
+
+      case Node(l, d, r) => {
+
+        if (n < d) Node(insert(l, n), d, r) // get to correct position on left subtree
+        else Node(l, d, insert(r, n)) // get to correct position on right subtree
+
+      }
     }
+
   }
+
+def deleteMin(t: SearchTree): (SearchTree, Int) = {
+  require(t != Empty)
+  (t: @unchecked) match {
+    case Node(Empty, d, r) => (r, d)
+    case Node(l, d, r) =>
+      val (l1, m) = deleteMin(l)
+      (Node(l1,d,r), m)
+      
+  }
+}
  
-  def delete(t: SearchTree, n: Int): SearchTree = throw new UnsupportedOperationException
+  def delete(t: SearchTree, n: Int): SearchTree = t match{
+    case Empty => t
+    case Node(Empty, d, Empty) => if (n == d) Empty else t
+    case Node(l, d, Empty) => if (n == d) l else Node(delete(l,n), d, Empty)
+    case Node(Empty, d, r) => if (n == d) r else Node(Empty, d, delete(r,n))
+    case Node(l,d,r) => 
+      if (n == d) {
+        val (r1,rightmin) = deleteMin(r)
+        Node(l,rightmin,r1)
+      }
+      else if (n>d) 
+        Node(l, d, delete(r, n))
+      else Node(delete(l, n), d, r)
+  }
   
   /* JavaScripty */
   
   def eval(e: Expr): Double = e match {
-    case N(n) => throw new UnsupportedOperationException
-    case _ => throw new UnsupportedOperationException
+    case N(n) => n
+    case Unary(Neg, e1) => -1 * eval(e1)
+    case Binary(Plus, e1, e2) => eval(e1) + eval(e2)
+    case Binary(Minus, e1, e2) => eval(e1) - eval(e2)
+    case Binary(Times, e1, e2) => eval(e1) * eval(e2)
+    case Binary(Div, e1, e2) => eval(e1) / eval(e2)
+
   }
   
  // Interface to run your interpreter from a string.  This is convenient
