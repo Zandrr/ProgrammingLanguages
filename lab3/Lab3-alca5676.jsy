@@ -1,0 +1,6 @@
+const x = 0;
+
+const callFunc = function(y) { return x; };
+const runFunc = function(x) { return callFunc(42); };
+
+runFunc(10);
