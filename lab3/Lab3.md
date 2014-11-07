@@ -2,7 +2,7 @@
 
 Alex Campbell; Partner - Edward Zhu
 
-### 1. JavaScripty Interpreter: Tag Testing, Recursive Funtions, and Dynamic Scoping
+### 1. JavaScripty Interpreter: Tag Testing, Recursive Functions, and Dynamic Scoping
 **a.**  Give one test case that behaves differently under dynamic scoping versus static scoping (and does not crash). Explain the test case and how they behave differently in your write-up.
 
 Example of Differences w/ Scoping: 
@@ -15,7 +15,7 @@ Example of Differences w/ Scoping:
 	runFunc(10);
  ```
 
-If this program was ran on with a dynamically typed language, then runFunc(5) would return 10. This is because the scope of the function callFunc will be within the same scope in the function runFunc, where the const 'x' that is taking into runFunc is changed from the 'x' outside its scope that was set to 0 to the value 10. So then the 'x' variable in callFunc will reference the value of 10 from runFunc, so the 'x' that is being returned in callFunc will be 10.
+If this program was ran on with a dynamically typed language, then runFunc(10) would return 10. This is because the scope of the function callFunc will be within the same scope in the function runFunc, where the const 'x' that is taking into runFunc is changed from the 'x' outside its scope that was set to 0 to the value 10. So then the 'x' variable in callFunc will reference the value of 10 from runFunc, so the 'x' that is being returned in callFunc will be 10.
 
 When this program is ran under static scoping, even though the 'x' in runFunc gets changed to 10 from 0, when callFunc(42) gets called, the scope within the callFunc is separtate from the scope of runFunc, thus the 'x' in runFunc is bound to the outside scope at the very beginning of the value 0. Thus x in this case would print 0.
 
