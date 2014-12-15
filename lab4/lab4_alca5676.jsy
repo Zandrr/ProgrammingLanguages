@@ -1,0 +1,2 @@
+const f = {e: 12, g: function(x: number) { return x + 2 } }; 
+f.g(f.e);
